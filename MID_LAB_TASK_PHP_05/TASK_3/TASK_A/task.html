@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+<?php 
+if(isset($_POST['submit']))
+{
+	$day = $_POST['myday'];
+	$month = $_POST['mymonth'];
+	$year = $_POST['myyear'];
+	if($day == "" || $month == "" || $year == "")
+	{
+		echo "null submission";
+	}else{
+		echo "sucess......";
+		echo $day;
+		echo "<br>";
+		echo $month;
+		echo "<br>";
+		echo $year;
+	}
+}
+?>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +26,7 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	<form method="POST" action="task.php">
+	<form method="POST" action="">
 		<fieldset>
 			<legend>DATE OF BIRTH</legend>
 			&nbsp;&nbsp;&nbsp;dd
