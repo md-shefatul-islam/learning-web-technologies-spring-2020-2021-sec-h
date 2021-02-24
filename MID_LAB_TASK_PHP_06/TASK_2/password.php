@@ -16,7 +16,7 @@ echo "New Passwword and  Retype New Passwword must be same......";
 {
  echo " Current Passwword and New Passwword can not be same.....";
 }
-
+}
 ?>
 
 <!DOCTYPE html>
