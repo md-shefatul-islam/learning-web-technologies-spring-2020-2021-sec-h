@@ -1,7 +1,9 @@
 <?php 
 if(isset($_POST['submit']))
 {
-	 $genders = $_POST["gender"];
+	if(isset($_POST['gender'])){
+	 $genders = $_POST['gender'];
+	}
 	if($genders == "")
 	{
 		echo "null submission";
